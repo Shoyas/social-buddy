@@ -1,0 +1,17 @@
+.post-container{
+    padding: 10px;
+    border-radius: 5px;   
+}
+.main-container{
+    margin-bottom: 10px;
+}
+.post-container:hover{
+    background-color: #FFFFFF !important;
+}
+.button{
+    color: blue;
+    text-decoration: none;
+}
+.button-container{
+    display: flex;
+}

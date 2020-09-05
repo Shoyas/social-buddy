@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Post from '../Post/Post';
 
 const Posts = () => {
-    const [posts, setPosts] = useState();
+
+    const [posts, setPosts] = useState([]);
 
     useEffect(() => {
         const url = "https://jsonplaceholder.typicode.com/posts";
@@ -11,10 +12,13 @@ const Posts = () => {
         .then(data => setPosts(data))
 
     }, []);
-    console.log(posts);
+    //console.log(posts);
     return (
         <div>
-            <Post post={posts}></Post>
+            <h3>Total Posts : {posts.length}</h3>
+            {
+                posts.map(post => <Post post={post}></Post>)
+            }
         </div>
     );
 };
