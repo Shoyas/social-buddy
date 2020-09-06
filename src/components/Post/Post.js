@@ -14,7 +14,7 @@ const Post = (props) => {
     
         <Container maxWidth="m" className="main-container">
             <Typography className="post-container" component="div" style={{ backgroundColor: '#F1F1F1', height: '30vh' }}> 
-                <h3>Id : {id}</h3>
+                <h3>Post Number : {id}</h3>
                 <p>Title : {title}</p>
                 <p><small>{body}</small></p>
                 <div className="button-container">

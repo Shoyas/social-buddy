@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 
 
 
+
 const PostDetail = () => {
     let id = useParams();
     //console.log(id.id);
@@ -24,7 +25,6 @@ const PostDetail = () => {
     let end = start + 1;
     //console.log(end);
     const postDetails = postDetail.slice(start, end);   
-
 
 
     return (
